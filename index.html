@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме | Федоренко Богдан Олександрович</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root { --primary: #2c3e50; --accent: #3498db; --text: #333; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 40px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); border-radius: 12px; }
+        
+        header { display: flex; gap: 30px; border-bottom: 2px solid var(--bg); padding-bottom: 30px; margin-bottom: 30px; align-items: flex-start; }
+        .photo { 
+            width: 200px; 
+            height: 240px; 
+            border-radius: 10px; 
+            object-fit: cover; 
+            object-position: top; 
+            border: 3px solid var(--accent); 
+        }
+
+        h1 { margin: 0; color: var(--primary); font-size: 2.2em; text-transform: uppercase; }
+        .subtitle { color: var(--accent); font-size: 1.1em; font-weight: 600; margin: 10px 0; line-height: 1.3; }
+        .contacts { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px; font-size: 0.95em; }
+        .contacts a { text-decoration: none; color: var(--text); transition: color 0.3s; }
+        .contacts a:hover { color: var(--accent); }
+        
+        section { margin-bottom: 35px; }
+        h2 { border-left: 5px solid var(--accent); padding-left: 15px; color: var(--primary); text-transform: uppercase; font-size: 1.2em; margin-bottom: 20px; }
+        .job-item { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .job-item:last-child { border: none; }
+        .job-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--primary); margin-bottom: 8px; }
+        .company { color: var(--accent); font-style: italic; margin-bottom: 10px; display: block; }
+        
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; list-style: none; padding: 0; }
+        .skills-grid li { background: var(--bg); padding: 8px 15px; border-radius: 6px; font-size: 0.9em; }
+        
+        .hobby-tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin-top: 10px; }
+        .hobby-tags li { background: #e8f4fd; color: #2980b9; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85em; border: 1px solid #3498db; }
+
+        .footer-info { background: var(--primary); color: #fff; padding: 15px; border-radius: 8px; margin-top: 20px; text-align: center; }
+
+        @media (max-width: 600px) { 
+            header { flex-direction: column; text-align: center; align-items: center; } 
+            .photo { width: 100%; max-width: 250px; height: auto; } 
+            .skills-grid { grid-template-columns: 1fr; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="photo.jpg" alt="ФЕДОРЕНКО БОГДАН ОЛЕКСАНДРОВИЧ" class="photo">
+            <div>
+                <h1>ФЕДОРЕНКО БОГДАН</h1>
+                <div class="subtitle">Керівник / інженер з дозвільної документації та супроводу будівельних проєктів</div>
+                <div class="contacts">
+                    <a href="tel:+380939700792"><i class="fas fa-phone"></i> +380 93 970 07 92</a>
+                    <a href="mailto:fedorenko.bogdan.dev@gmail.com"><i class="fas fa-envelope"></i> fedorenko.bogdan.dev@gmail.com</a>
+                    <span><i class="fas fa-map-marker-alt"></i> Київська область</span>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Професійний профіль</h2>
+            <p>Понад 10 років досвіду у сфері містобудування та управління будівельними проєктами. Маю ґрунтовний досвід взаємодії з державними органами (ДАБІ, ДІАМ) та супроводу об'єктів будь-якої складності (СС2, СС3). Відзначаюся здатністю ефективно працювати в команді, координуючи роботу профільних спеціалістів, підрядників та проєктантів для досягнення спільного результату в стислі терміни.</p>
+        </section>
+
+        <section>
+            <h2>Ключові компетенції</h2>
+            <ul class="skills-grid">
+                <li><i class="fas fa-check"></i> Повний цикл дозвільної документації</li>
+                <li><i class="fas fa-check"></i> Практичний досвід роботи з ЄДЕССБ</li>
+                <li><i class="fas fa-check"></i> Командна взаємодія та менеджмент проєктів</li>
+                <li><i class="fas fa-check"></i> Аналіз та експертиза проєктної документації</li>
+                <li><i class="fas fa-check"></i> Оптимізація процесів та мінімізація ризиків</li>
+                <li><i class="fas fa-check"></i> Представництво інтересів замовника</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Досвід роботи</h2>
+            <div class="job-item">
+                <div class="job-header">
+                    <span>Начальник відділу капітального будівництва</span>
+                    <span>2022 – Теперішній час</span>
+                </div>
+                <span class="company">Гостомельська селищна військова адміністрація</span>
+                <ul>
+                    <li>Управління будівельними проєктами відновлення та нового будівництва.</li>
+                    <li>Координація роботи команди та взаємодія з органами державної влади.</li>
+                    <li>Прийняття стратегічних управлінських рішень.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span>Супровід будівництва житлових об’єктів</span>
+                    <span>2021 – 2022</span>
+                </div>
+                <span class="company">Приватна будівельна компанія</span>
+                <ul>
+                    <li>Повний супровід та організація процесів будівництва.</li>
+                    <li>Контроль термінів та якості виконання робіт підрядними організаціями.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span>Керівні посади / Дозвільні процедури</span>
+                    <span>2014 – 2021</span>
+                </div>
+                <span class="company">ДАБІ України</span>
+                <ul>
+                    <li>Державний контроль та робота з дозвільними процедурами на національному рівні.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Технічні хобі та IT-навички</h2>
+            <p>У вільний час активно розвиваюся в напрямку веб-технологій, що допомагає мені краще розуміти цифрові інструменти моніторингу та управління інфраструктурою:</p>
+            <ul class="hobby-tags">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>GIT</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Освіта</h2>
+            <ul>
+                <li><strong>КНУБА</strong> – Інженер-будівельник</li>
+                <li><strong>НАУ</strong> – Інженер-електронік</li>
+                <li><strong>МКУ ім. Пилипа Орлика</strong> – Магістр права</li>
+            </ul>
+        </section>
+
+        <div class="footer-info">
+            Фінансові очікування: від 2500$ (обговорюється)
+        </div>
+    </div>
+</body>
+</html>
